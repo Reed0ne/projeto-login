@@ -31,7 +31,7 @@ Grandes telas: 1200px adiante
     }
 }
 
-@media screen and (min-width: 993px) {
+@media screen and (min-width: 992px) {
     body {
         background-image: linear-gradient(to top, #BE0D93, #6C76CD, #9E5CC0,#EE9DD5, #D9E6DC);
     }
@@ -41,14 +41,22 @@ Grandes telas: 1200px adiante
     }
 
     #login > div#imagem {
-        float: left;
+        float: right;
         width: 50%;
         height: 100%;
     }
 
     #login > div#formulario {
-        float: right;
+        float: left;
         width: 50%;
         height: 100%;
+    }
+
+    #formulario > h1 {
+        font-size: 2em;
+    }
+    
+    #formulario > p {
+        font-size: 1.3em;
     }
 }
