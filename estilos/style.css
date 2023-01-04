@@ -39,8 +39,8 @@ main {
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
+    transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
@@ -76,8 +76,33 @@ form label {
     background-color: #EE9DD5;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid black;
+}
+
+.campo > span {
+    color: whitesmoke;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+
+}
+
+.campo > input {
+    background-color: #bfcbc1;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 1px;
+    width: calc(100% - 44px);
+    transform: translateY(-5.5px);
+}
+
+.campo > input:focus-within {
+    background-color: white;
+    border: none;
 }
 
 form > input[type=submit] {
